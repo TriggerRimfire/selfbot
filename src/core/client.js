@@ -5,7 +5,8 @@ const Eris = require('eris')
       this.config = require('../config.json')
       this.bot = new Eris(this.config.token)
       this.commands = []
-      loadFolder(require("path").resolve("../src/commands"), this)
+      loadFolder(require("path").resolve("../src/lib/commands"), this)
+      console.log(this.commands)
       require('./events')(this)
       this.bot.connect()
     }
