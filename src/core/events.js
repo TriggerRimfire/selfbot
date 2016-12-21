@@ -18,4 +18,8 @@ module.exports = client => {
     }
 
   })
+  client.spotify.on('trackChange', (song) => {
+    //do things
+  })
+
 }
