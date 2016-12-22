@@ -19,7 +19,13 @@ module.exports = client => {
 
   })
   client.spotify.on('trackChange', (song) => {
-    //do things
+    console.log(song);
+    let curr = '🎵 '+song[0].artist+' - '+song[0].name
+    console.log(curr)
+    client.bot.editStatus('dnd', {'name': curr})
+  //  client.bot.shards.forEach(shard => {
+  //    shard.editStatus('dnd', {'name': curr})
+  //  })
   })
 
 }

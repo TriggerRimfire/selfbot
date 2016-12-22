@@ -1,0 +1,9 @@
+{
+  "token": "your token",
+  "identifiers": ["_", "$"],
+  "owner": "your id",
+  "lastfm": {
+    "username": "your lastfm username",
+    "key": "your last fm api key"
+  }
+}
