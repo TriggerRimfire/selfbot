@@ -1,2 +1,3 @@
-let client = require('./core/client')
-return new client()
+const client = require('./core/client')
+const run = new client()
+run.bot.connect()
